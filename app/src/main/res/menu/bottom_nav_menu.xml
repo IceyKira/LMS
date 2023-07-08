@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/page_person"
+        android:title="@string/page1_person"
+        android:icon="@drawable/baseline_person_24"/>
+
+    <item
+        android:id="@+id/page_daily"
+        android:title="@string/page2_daily"
+        android:icon="@drawable/baseline_view_list_24"/>
+
+    <item
+        android:id="@+id/page_task"
+        android:title="@string/page3_task"
+        android:icon="@drawable/baseline_task_alt_24"/>
+
+    <item
+        android:id="@+id/page_shop"
+        android:title="@string/page4_shop"
+        android:icon="@drawable/baseline_shopping_bag_24"/>
+
+    <item
+        android:id="@+id/page_data"
+        android:title="@string/page5_data"
+        android:icon="@drawable/baseline_pie_chart_24"/>
+
+</menu>

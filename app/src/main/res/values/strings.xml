@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LMS</string>
+    <string name="page1_person">属性</string>
+    <string name="page2_daily">日程安排</string>
+    <string name="page3_task">任务</string>
+    <string name="page4_shop">商店</string>
+    <string name="page5_data">统计数据</string>
+</resources>
