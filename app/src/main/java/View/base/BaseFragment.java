@@ -10,10 +10,11 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.lms.databinding.ActivityMainBinding;
+import com.example.lms.databinding.FragmentDataBinding;
 
 public abstract class BaseFragment extends Fragment {
     protected View contentView;
-    protected ActivityMainBinding binding;
+    protected FragmentDataBinding binding;
 
     protected abstract int getLayoutId();
     protected abstract void initViews();
@@ -22,7 +23,7 @@ public abstract class BaseFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         contentView = inflater.inflate(getLayoutId(), container, false);
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        binding = FragmentDataBinding.inflate(inflater);
         initViews();
         return contentView;
     }
