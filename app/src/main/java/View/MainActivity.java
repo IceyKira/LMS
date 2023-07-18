@@ -20,20 +20,18 @@ import com.google.android.material.navigation.NavigationBarView;
 
 
 public class MainActivity extends AppCompatActivity implements NavigationBarView.OnItemSelectedListener {
-    private ActivityMainBinding binding;
     private FragmentTransaction fragmentTransaction;
     private Fragment[] fragments;
     private int lastFragmentIndex = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
+        setContentView(R.layout.activity_main);
         initViews();
     }
 
     protected void initViews(){
-        BottomNavigationView bottomNavigationView = binding.bottomNavigationView;
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
         bottomNavigationView.setOnItemSelectedListener(this);
         fragments = new Fragment[] {
                 new PersonFragment(),
@@ -69,7 +67,6 @@ public class MainActivity extends AppCompatActivity implements NavigationBarView
     }
 
     private void switchFragment(int towardsIndex) {
-
         if(lastFragmentIndex == towardsIndex) {
             return;
         }
